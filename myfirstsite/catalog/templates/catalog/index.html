@@ -1,11 +1,6 @@
-{%extends 'catalog/base.html' %}
 
-{% block title %}
-{{title}}
-{% endblock %}
-
-{% block content %}
-    <h1>главная страница</h1>
-
-
+{% extends 'catalog/base.html'%}
+{% load static %}
+{%block content%}
+<img class="index-img" alt="task" src='{% static "img/book.jpg"%}'>
 {% endblock %}

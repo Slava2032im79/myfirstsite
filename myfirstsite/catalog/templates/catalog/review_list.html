@@ -1,0 +1,26 @@
+
+
+{% extends 'catalog/base.html'%}
+{%block content%}
+{% for review in reviews %}
+    <div class="review card">
+      <div class="card-header">
+        {{review.id}}
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">User: {{review.user}}</li>
+        <li class="list-group-item">Text: {{review.text}}</li>
+        <li class="list-group-item">Task: {{review.task}}</li>
+          <li class="list-group-item">
+              <a class="btn btn-dark" href="{% url 'task_review_list' task_id=review.task.id%}" role="button">Reviews</a>
+              {% if user.is_authenticated %}
+                {% if review.user == user %}
+                    <a class="btn btn-dark" href="{% url 'delete_review' review_id=review.id%}">Delete review</a>
+                    <a class="btn btn-dark" href="{% url 'edit_review' review_id=review.id%}">Edit review</a>
+                {% endif %}
+              {% endif %}
+          </li>
+      </ul>
+    </div>
+{% endfor %}
+{% endblock %}

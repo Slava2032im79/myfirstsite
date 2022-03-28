@@ -1,0 +1,24 @@
+
+
+{% extends 'catalog/base.html'%}
+{%block content%}
+<div class="review card">
+  <div class="card-header">
+    {{task.id}}
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Name: {{book.name}}</li>
+    <li class="list-group-item">Description: {{task.description}}</li>
+    <li class="list-group-item">Pages number: {{task.pages_number}}</li>
+    <li class="list-group-item">
+            <a class="btn btn-dark" href="{% url 'task_review_list' task_id=task.id%}" role="button">Reviews</a>
+            {% if user.is_authenticated %}
+                <a class="btn btn-dark" href="{% url 'add_review' task_id=task.id%}">Add review</a>
+                {% if user.is_superuser %}
+                    <a class="btn btn-dark" href="{% url 'edit_task' task_id=task.id%}" role="button">Edit task</a>
+                {% endif %}
+            {% endif %}
+    </li>
+  </ul>
+</div>
+{% endblock %}

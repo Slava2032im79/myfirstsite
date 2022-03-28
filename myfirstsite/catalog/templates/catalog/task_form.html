@@ -1,0 +1,7 @@
+{% extends 'catalog/base.html'%}
+{%block content%}
+<form action="/app/add_task/" method="post" class="task-form">
+<form action="." method="post" class="task-form">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit">
