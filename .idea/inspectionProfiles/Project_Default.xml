@@ -1,0 +1,14 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="_works_._works_.catalog.views.specialist_level" />
+          <option value="_works_._works_.catalog.views.specialist_level_detail" />
+          <option value="myfirstsite.catalog.models.Post" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

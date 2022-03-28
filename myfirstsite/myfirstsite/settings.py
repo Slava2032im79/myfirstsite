@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> Merge remote-tracking branch 'origin/master'
 """
 Django settings for myfirstsite project.
 
@@ -10,6 +14,12 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
+<<<<<<< HEAD
+=======
+=======
+import os
+>>>>>>> Merge remote-tracking branch 'origin/master'
+>>>>>>> Merge remote-tracking branch 'origin/master'
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -20,14 +30,29 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+<<<<<<< HEAD
 SECRET_KEY = 'django-insecure-5q$f&r5u4oq@q)**l+$0**&q8*)+0jfppu!@r9r-!u&+jggwsz'
+=======
+<<<<<<< HEAD
+SECRET_KEY = 'django-insecure-5q$f&r5u4oq@q)**l+$0**&q8*)+0jfppu!@r9r-!u&+jggwsz'
+=======
+SECRET_KEY = 'django-insecure-)p9lunw-rs%_n!0aag0az0*@&dwa^r5q)900pe7rj^i+b3v=k%'
+>>>>>>> Merge remote-tracking branch 'origin/master'
+>>>>>>> Merge remote-tracking branch 'origin/master'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = []
 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> Merge remote-tracking branch 'origin/master'
+>>>>>>> Merge remote-tracking branch 'origin/master'
 # Application definition
 
 INSTALLED_APPS = [
@@ -37,8 +62,17 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+<<<<<<< HEAD
     'myfirstsite',
     'catalog',
+=======
+<<<<<<< HEAD
+    'myfirstsite',
+    'catalog',
+=======
+    'catalog'
+>>>>>>> Merge remote-tracking branch 'origin/master'
+>>>>>>> Merge remote-tracking branch 'origin/master'
 ]
 
 MIDDLEWARE = [
@@ -53,10 +87,29 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'myfirstsite.urls'
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> Merge remote-tracking branch 'origin/master'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [],
+<<<<<<< HEAD
+=======
+=======
+TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
+
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [TEMPLATE_DIR],
+>>>>>>> Merge remote-tracking branch 'origin/master'
+>>>>>>> Merge remote-tracking branch 'origin/master'
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
