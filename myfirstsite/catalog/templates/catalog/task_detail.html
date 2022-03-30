@@ -9,7 +9,7 @@
   <ul class="list-group list-group-flush">
     <li class="list-group-item">Name: {{book.name}}</li>
     <li class="list-group-item">Description: {{task.description}}</li>
-    <li class="list-group-item">Pages number: {{task.pages_number}}</li>
+    <li class="list-group-item">Options: {{task.options}}</li>
     <li class="list-group-item">
             <a class="btn btn-dark" href="{% url 'task_review_list' task_id=task.id%}" role="button">Reviews</a>
             {% if user.is_authenticated %}
